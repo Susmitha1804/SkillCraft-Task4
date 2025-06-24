@@ -1,0 +1,132 @@
+:root {
+  --bg-color: #ffe6f0;
+  --text-color: #4a0033;
+  --input-bg: #fff;
+  --button-bg: #ff99bb;
+  --button-hover: #ff6699;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: var(--bg-color);
+  font-family: 'Segoe UI', sans-serif;
+  color: var(--text-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.todo-container {
+  background-color: var(--bg-color);
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+  width: 90%;
+  max-width: 600px;
+  text-align: center;
+}
+
+h1 {
+  margin-bottom: 20px;
+}
+
+.top-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+  flex-wrap: wrap;
+}
+
+.task-inputs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.task-inputs input, .task-inputs button {
+  padding: 10px;
+  font-size: 1rem;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+}
+
+.task-inputs input[type="text"] {
+  flex: 1;
+  background-color: var(--input-bg);
+}
+
+#addTaskBtn {
+  background-color: var(--button-bg);
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+#addTaskBtn:hover {
+  background-color: var(--button-hover);
+}
+
+ul#taskList {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 10px;
+}
+
+ul#taskList li {
+  background-color: #fff0f5;
+  padding: 12px;
+  border-radius: 6px;
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.task-info {
+  text-align: left;
+  flex: 1;
+}
+
+.task-actions button {
+  background-color: var(--button-bg);
+  color: white;
+  border: none;
+  padding: 6px 10px;
+  border-radius: 4px;
+  margin-left: 5px;
+  cursor: pointer;
+}
+
+.task-actions button:hover {
+  background-color: var(--button-hover);
+}
+
+/* Themes */
+body.light {
+  --bg-color: #f9f9f9;
+  --text-color: #222;
+  --input-bg: #ffffff;
+  --button-bg: #007bff;
+  --button-hover: #0056b3;
+}
+
+body.dark {
+  --bg-color: #1e1e1e;
+  --text-color: #f4f4f4;
+  --input-bg: #333;
+  --button-bg: #ff9800;
+  --button-hover: #e65100;
+}
+
+body.purple {
+  --bg-color: #f5f0fa;
+  --text-color: #4b0082;
+  --input-bg: #f2e6ff;
+  --button-bg: #800080;
+  --button-hover: #660066;
+}

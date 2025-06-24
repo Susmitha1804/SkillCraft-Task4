@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>To-Do List</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="todo-container">
+    <h1>To-Do List</h1>
+    <div class="top-bar">
+      <span>Welcome, Susmitha!</span>
+      <div class="theme-logout">
+        <label for="themeSelector">Theme:</label>
+        <select id="themeSelector">
+          <option value="baby-pink">Baby Pink</option>
+          <option value="light">Light</option>
+          <option value="dark">Dark</option>
+          <option value="purple">Purple</option>
+        </select>
+      </div>
+    </div>
+
+    <div class="task-inputs">
+      <input type="text" id="taskText" placeholder="Add a new task..." />
+      <input type="datetime-local" id="taskDate" />
+      <button id="addTaskBtn">Add Task</button>
+    </div>
+
+    <ul id="taskList"></ul>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
